@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link href="css/style.css" rel="stylesheet" />
+	<title></title>
+</head>
+<body>
+	
+	<div class="timer"></div>
+	
+	<div class="menu">
+		<div class="button">
+			Play
+		</div>
+		<div class="button">
+			How To Play
+		</div>
+		<div class="button">
+			Settings
+		</div>
+		<div class="button">
+			Credits
+		</div>
+		<h4 class="highScore">High Score: <span class="high"></span></h4>
+	</div>
+	
+	<div class="score">
+		<div class="count"></div>
+		<div class="time"></div>
+	</div>
+	
+	<div class="game">
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+	</div>
+	
+	<div class="modal fade howToPlayModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+					</button>
+					<h4 class="modal-title">How to play</h4>
+				</div>
+				<div class="modal-body">
+					<p>
+						When you play a game part of the screen will highlight you then have to quickly press the correct arrow key for that section. 
+					</p>
+					<p>
+						For example if the left hand side of the screen highlights press the left arrow key. <br />If the center of the screen highlights press Up or Down. <br />If the right section of the screen highlights press the right arrow key.
+					</p>
+					<p>
+						A game lasts for 5 seconds, but this can be changed in the settings page. (When you change the game time the high score will reset.) 
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade credits">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+					</button>
+					<h4 class="modal-title">Credits</h4>
+				</div>
+				<div class="modal-body">
+					<p>
+						Made by Christopher Day @ <a href="http://cdcoding.com">CDCoding.</a> 
+					</p>
+					<p>
+						Version: <em>1.0.0</em>
+					</p>
+					<p>
+						&copy; CDCoding 2014
+					</p>
+					<p>
+						Libarys used:<br />
+						JQuery V1.11.1<br />
+						Bootstrap V3.2
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade settings">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+					</button>
+					<h4 class="modal-title">Game Settings</h4>
+				</div>
+				<div class="modal-body">
+					<div class="input-group">
+						<input class="form-control new-game-time" type="text" placeholder="New game time in seconds" />
+						<div class="btn input-group-addon btn-update-game-time">Update</div>
+					</div>
+					
+					<br />
+					
+					<button class="btn btn-danger reset-high">Reset High Score (this can not be undone)</button>
+					
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="js/jquery-1.11.1.min.js" type="application/javascript"></script>
+	<script src="js/bootstrap.min.js" type="application/javascript"></script>
+	<script src="js/game.js" type="application/javascript"></script>
+</body>
+</html>
